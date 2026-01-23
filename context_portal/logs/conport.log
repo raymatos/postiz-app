@@ -1,0 +1,14 @@
+2026-01-23 12:23:10,242 - INFO - context_portal_mcp.main - File logging configured to: /Volumes/Dock/Projects/postiz-app/context_portal/./logs/conport.log
+2026-01-23 12:23:10,242 - INFO - context_portal_mcp.core.config - Database filename set to: context.db
+2026-01-23 12:23:10,242 - INFO - context_portal_mcp.main - Using database filename: context.db
+2026-01-23 12:23:10,242 - INFO - context_portal_mcp.main - Parsed CLI args: Namespace(host='127.0.0.1', port=8000, workspace_id='/Volumes/Dock/Projects/postiz-app', auto_detect_workspace=True, workspace_search_start=None, no_auto_detect=False, mode='stdio', log_file='./logs/conport.log', db_path=None, base_path=None, db_filename='context.db', log_level='INFO')
+2026-01-23 12:23:10,243 - INFO - context_portal_mcp.main - Starting ConPort in STDIO mode with workspace detection enabled
+2026-01-23 12:23:10,243 - INFO - context_portal_mcp.core.workspace_detector - Workspace detected by strong indicators: /Volumes/Dock/Projects/postiz-app
+2026-01-23 12:23:10,243 - INFO - context_portal_mcp.main - Workspace detection details: {'start_path': '/Volumes/Dock/Projects/postiz-app', 'detected_workspace': '/Volumes/Dock/Projects/postiz-app', 'context_portal_path': '/Volumes/Dock/Projects/postiz-app/context_portal', 'detection_method': 'strong_indicators', 'indicators_found': ['package.json', '.git', '.gitignore', 'README.md', 'LICENSE'], 'environment_variables': {'VSCODE_WORKSPACE_FOLDER': None, 'CONPORT_WORKSPACE': None, 'PWD': '/Volumes/Dock/Projects/postiz-app', 'CWD': '/Volumes/Dock/Projects/postiz-app'}}
+2026-01-23 12:23:10,243 - INFO - context_portal_mcp.main - Effective workspace ID: /Volumes/Dock/Projects/postiz-app
+2026-01-23 12:23:10,243 - INFO - context_portal_mcp.main - Pre-warming database connection for workspace: /Volumes/Dock/Projects/postiz-app
+2026-01-23 12:23:10,243 - INFO - context_portal_mcp.db.database - Alembic.ini not found. Creating at /Volumes/Dock/Projects/postiz-app/context_portal/alembic.ini
+2026-01-23 12:23:10,243 - INFO - context_portal_mcp.db.database - Alembic env.py not found. Creating at /Volumes/Dock/Projects/postiz-app/context_portal/alembic/env.py
+2026-01-23 12:23:10,243 - INFO - context_portal_mcp.db.database - Initial schema not found. Creating at /Volumes/Dock/Projects/postiz-app/context_portal/alembic/versions/2025_06_17_initial_schema.py
+2026-01-23 12:23:10,247 - INFO - context_portal_mcp.db.database - Alembic: Script directory /Volumes/Dock/Projects/postiz-app/context_portal/alembic confirmed to exist by Python.
+2026-01-23 12:23:10,247 - INFO - context_portal_mcp.db.database - Running Alembic migrations for database: /Volumes/Dock/Projects/postiz-app/context_portal/context.db

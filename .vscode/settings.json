@@ -1,0 +1,6 @@
+{
+    "i18n-ally.localesPaths": [
+        "apps/extension/src/locales",
+        "libraries/react-shared-libraries/src/translation/locales"
+    ]
+}
