@@ -8,6 +8,7 @@ services:
     volumes:
       - postiz-config:/config/
       - ./postiz.env:/config/postiz.env:ro
+      - postiz-uploads:/uploads/
     ports:
       - "4007:5000"
     networks:
@@ -152,6 +153,9 @@ volumes:
     external: false
 
   postiz-config:
+    external: false
+
+  postiz-uploads:
     external: false
 
 networks:

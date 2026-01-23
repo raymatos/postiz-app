@@ -1,7 +1,7 @@
 # Postiz Deployment Guide
 
 ## Overview
-This deployment configuration sets up Postiz at `https://positiz.i9labs.com` with S3-compatible storage, Temporal workflow engine, and Spotlight debugging.
+This deployment configuration sets up Postiz at `https://postiz.i9labs.com` with S3-compatible storage, Temporal workflow engine, and Spotlight debugging.
 
 ## Prerequisites
 - Docker and Docker Compose installed
@@ -16,7 +16,7 @@ Contains all environment variables for the Postiz container. This file is:
 - Loaded via `env_file` directive in docker-compose
 
 **Key settings:**
-- **URLs**: `https://positiz.i9labs.com` (managed by external reverse proxy)
+- **URLs**: `https://postiz.i9labs.com` (managed by external reverse proxy)
 - **Database**: PostgreSQL with randomly generated credentials
 - **Storage**: S3-compatible via AWS SDK
 - **JWT Secret**: Random 64-character string for session security
@@ -40,8 +40,8 @@ Orchestrates all services required for Postiz.
 ## Reverse Proxy Configuration
 
 Your external reverse proxy should forward:
-- `https://positiz.i9labs.com` → `http://<this-host>:4007`
-- `https://positiz.i9labs.com/api` → `http://<this-host>:4007/api`
+- `https://postiz.i9labs.com` → `http://<this-host>:4007`
+- `https://postiz.i9labs.com/api` → `http://<this-host>:4007/api`
 
 Ensure the proxy:
 - Sets proper `X-Forwarded-For`, `X-Forwarded-Proto`, and `Host` headers
@@ -72,12 +72,12 @@ docker compose exec temporal-postgresql psql -U temporal -c "\l"
 ```
 
 ### 3. Access the Application
-- **Main App**: `https://positiz.i9labs.com` (via your reverse proxy)
+- **Main App**: `https://postiz.i9labs.com` (via your reverse proxy)
 - **Temporal UI**: `http://<host>:8080` (direct access for monitoring)
 - **Spotlight**: `http://<host>:8969` (direct access for debugging)
 
 ### 4. Create First User
-Navigate to `https://positiz.i9labs.com` and register the first account (unless `DISABLE_REGISTRATION=true` is set).
+Navigate to `https://postiz.i9labs.com` and register the first account (unless `DISABLE_REGISTRATION=true` is set).
 
 ## Storage Verification
 
